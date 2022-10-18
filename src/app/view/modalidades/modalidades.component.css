@@ -1,0 +1,58 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .container-fluid{
+    background-color: #000;
+  }
+
+  .card-group {
+    padding: 2px;
+  }
+
+  .cartao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #FFBA2E;
+  border-radius: 5px;
+  margin: 10px;
+    }
+
+.card-title{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.card-text{
+    font-size: 2.5rem;
+    color: #ED3237;
+}
+
+
+.valor{
+    font-size: 4.0rem;
+    font-weight: bolder;
+}
+
+.btn{
+    background-color: #ED3237;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+}
+
+.card-img-top{
+border: 2px solid #FFBA2E;
+}
+

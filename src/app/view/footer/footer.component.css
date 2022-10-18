@@ -1,0 +1,49 @@
+.area{
+    height: 90px;
+    background-color: #333333;
+    border-top: 0.2rem solid #FDB92E;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p{
+    color: #FDB92E;
+}
+
+.titulo2{
+    color: white;
+    margin-top: -15px;
+}
+
+.logo{
+    margin-left: 20px;
+    height: 70px;
+}
+
+@media (max-width: 800px) {
+
+    .principal{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        background-color: #333333;
+        
+    }
+
+    .logotipo {
+        display: none;
+    }
+    .titulos{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        align-content: flex-end;
+    }
+    
+    }

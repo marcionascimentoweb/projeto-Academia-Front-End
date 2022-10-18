@@ -1,0 +1,64 @@
+<app-header></app-header>
+
+<section class="container-fluid fundo">
+    <article class="flex-item-12">
+    <article class="container conteudo">
+        <h1 class="titulo">Editar Alunos</h1>
+
+            <article class="row corpo">
+                <div class="col-md-3">
+                    <label class="form-label">Id Aluno:</label><br />
+                    <input type="text" [(ngModel)]="request.idAluno" class="form-control" id="idAluno" name="idAluno" placeholder="Digite seu id"><br><br>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Nome:</label><br />
+                    <input type="text" [(ngModel)]="request.nome" class="form-control" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Data de Nascimento</label><br />
+                    <input type="date" [(ngModel)]= "request.dataNascimento" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="Digite a data do seu nascimento">
+                </div>
+            </article>
+            
+            <article>
+                <div class="row corpo">
+                    <div class="col-md-4">
+                        <label class="form-label">Sexo</label><br />
+                            <div class="form-check">
+                                <input type="radio" [(ngModel)]= "request.sexo" id="sexo" class="form-check-input" name="sexo" id="sexo" value="Masculino" checked>
+                                    <label class="form-check-label" for="Masculino">
+                                        Masculino
+                                    </label>
+                            </div>
+                        
+                            <div class="form-check">
+                                <input type="radio" [(ngModel)]= "request.sexo" id="sexo"  class="form-check-input" name="sexo" id="sexo" value="Feminino">
+                                    <label class="form-check-label" for="Feminino">
+                                        Feminino
+                                    </label>
+                            </div><br />
+                  </div>
+
+                  <div class="col-md-4">
+                        <label class="form-label">Estado Civil</label><br />
+                          <select id="estadoCivil" [(ngModel)]= "request.estadoCivil" class="form-select" aria-label="Default select example">
+                              <option selected>Escolha uma opção</option>
+                              <option value="Solteiro">Solteiro(a)</option>
+                              <option value="Casado">Casado(a)</option>
+                              <option value="Viúvo">Viúvo(a)</option>
+                              <option value="Divorciado">Divorciado(a)</option>
+                          </select>
+                    </div>
+                </div>
+            </article>
+            <br/>
+
+        <section class="botao">
+            <button (click)="update" class="col-md-4 botaoEditar">Editar</button>
+        </section>
+    </article>
+    </article>
+</section>
+
+<app-footer></app-footer>
+

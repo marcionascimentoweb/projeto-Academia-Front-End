@@ -1,0 +1,36 @@
+
+<app-header></app-header>
+
+<section class="container-fluid fundo">
+
+    <article class="container conteudo">
+
+        <h1 class="titulo">Lista de Alunos</h1>
+        
+        <table class="table table-hover">
+            <thead class="tabela_Head col-sm-12">
+                <th scope="col">ID ALUNO</th>
+                <th scope="col">NOME</th>
+                <th scope="col">DATA DE NASCIMENTO</th>
+                <th scope="col">SEXO</th>
+                <th scope="col">ESTADO CIVIL</th>
+                <th scope="col">...</th>
+                <th scope="col">...</th>
+            </thead>
+    
+            <tbody class="tabela_Body">
+                <tr *ngFor="let item of alunos">
+                    <td>{{item.idAluno}}</td>
+                    <td>{{item.nome}}</td>
+                    <td>{{item.dataNascimento | date: 'dd/MM/yyyy'}}</td>
+                    <td>{{item.sexo}}</td>
+                    <td>{{item.estadoCivil}}</td>
+                    <td><a routerLink="/alunosDeletar/{{item.idAluno}}"><img class="icones" [src]="excluir"></a></td>
+                    <td><a routerLink="/alunosEditar/{{item.idAluno}}"><img class="icones" [src]="editar"></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+</section>
+
+<app-footer></app-footer>

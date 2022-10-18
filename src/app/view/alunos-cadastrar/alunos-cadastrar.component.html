@@ -1,0 +1,59 @@
+<app-header></app-header>
+
+<section class="container-fluid">
+    <section class="container">
+        <h1>Cadastrar Alunos</h1>
+        <form class="cadastrar" [formGroup]="formulario" >
+
+            <article class="row">
+                <div class="col-md-8">
+                    <label class="form-label">Nome</label><br />
+                    <input type="text" class="form-control" id="nome" formControlName="nome" name="nome" placeholder="Digite seu nome"><br><br>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Data de Nascimento</label><br />
+                    <input type="date" class="form-control" id="dataNascimento" formControlName="dataNascimento" name="dataNascimento" placeholder="Digite a data do seu nascimento"><br><br>
+                </div>
+            </article>
+            
+            <article>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="form-label">Sexo</label><br />
+                            <div class="form-check">
+                                <input type="radio" id="sexo" formControlName="sexo" class="form-check-input" name="Sexo" id="Masculino" value="Masculino" checked>
+                                    <label class="form-check-label" for="Masculino">
+                                        Masculino
+                                    </label>
+                            </div>
+                        
+                            <div class="form-check">
+                                <input type="radio" id="sexo" formControlName="sexo" class="form-check-input" name="Sexo" id="Feminino" value="Feminino">
+                                    <label class="form-check-label" for="Feminino">
+                                        Feminino
+                                    </label>
+                            </div><br />
+                  </div>
+
+                  <div class="col-md-4">
+                        <label class="form-label">Estado Civil</label><br />
+                          <select id="estadoCivil" formControlName="estadoCivil" class="form-select" aria-label="Default select example">
+                              <option selected>Escolha uma opção</option>
+                              <option value="Solteiro">Solteiro(a)</option>
+                              <option value="Casado">Casado(a)</option>
+                              <option value="Viúvo">Viúvo(a)</option>
+                              <option value="Divorciado">Divorciado(a)</option>
+                          </select>
+                    </div>
+                </div>
+            </article>
+            <br/>
+        </form>
+
+        <section class="botao">
+            <button (click)="cadastrar()" class="col-md-4 botaoCadastrar">Cadastrar</button>
+        </section>
+    </section>
+</section>
+
+<app-footer></app-footer>

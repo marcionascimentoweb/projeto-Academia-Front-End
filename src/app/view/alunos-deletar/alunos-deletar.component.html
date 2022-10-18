@@ -1,0 +1,21 @@
+<app-header></app-header>
+
+<section class="container-fluid fundo">
+  <article class="flex-item-12">
+    <div class="container conteudo">
+      <h1 class="titulo">Deletar Aluno</h1>
+      <div class="corpoDelete" *ngIf="aluno">
+        <label>Id Aluno: <strong>{{aluno.idAluno}}</strong></label><br><br>
+        <label>Nome: <strong>{{aluno.nome}}</strong></label><br><br>
+        <label>Data de Nascimento: <strong>{{aluno.dataNascimento | date: 'dd/MM/yyyy'}}</strong></label><br><br>
+        <label>Sexo: <strong>{{aluno.sexo}}</strong></label><br><br>
+        <label>Estado Civil: <strong>{{aluno.estadoCivil}}</strong></label><br><br>
+      </div>
+      <section class="botao">
+        <button class="button col-md-4 botaoDeletar" (click)="deletar()">Confirmar</button>
+    </section>
+  </div>
+  </article>
+</section>
+
+<app-footer></app-footer>

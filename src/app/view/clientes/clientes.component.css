@@ -1,0 +1,25 @@
+.area{
+    margin: 0 auto;
+
+}
+
+.card1{
+    width: 900px;
+    height: 150px;
+    background-color: aqua;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    background-color: blue;
+    height: 100%;
+}
+
+.corpo{
+    background-color: blueviolet;
+    height: 100%;
+}
+

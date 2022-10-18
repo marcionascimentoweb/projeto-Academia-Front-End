@@ -1,0 +1,87 @@
+
+/*VARIAVEIS DAS CORES
+    --preto1: #000000;
+    --preto2: #333333;
+    --preto3: #6A6A6A;
+    --preto4: #A4A4A4;
+    --preto5: #D5D5D5;
+
+    --amarelo1: #FDB92E;
+    --amarelo2: #FFCC29;
+    --amarelo3: #FFF212;
+    --amarelo4: #FFF472;
+    --amarelo5: #FFFAC2;
+
+    --vermelho: #ED3237;
+    --azul: #0098DA;
+    --branco: #FFFFFF;
+
+    --gap: 3rem;
+  */
+
+.headerTotal{
+  background-color: #333333;
+  border-bottom: 0.2rem solid #FDB92E;
+}
+
+html{
+font-size: 62.5%;
+}
+
+.logo{
+  height: 60px;
+}
+
+.area{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  display: block;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  color: #FDB92E;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background: linear-gradient(to right, #FDB92E , #FFF212);;
+  transition: all 300ms ease-in-out;
+}
+
+a:hover {
+  color: #FFF212;
+} 
+
+
+a:hover::after {
+  width: 50%;
+  left: 25%;
+} 
+
+.navbar-toggler-icon{
+  color: #FDB92E;
+  background-color: #FDB92E;
+}
+
+.navbar-toggler-icon:hover{
+  background-color: #FFF212;
+}
+
+button{
+color: #FFF212;
+}
+button:hover{
+color: #FFF212;
+}
+
+

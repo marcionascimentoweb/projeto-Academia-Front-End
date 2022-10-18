@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*VARIAVEIS DAS CORES*/
+:root {
+    --preto1: #000000;
+    --preto2: #333333;
+    --preto3: #6A6A6A;
+    --preto4: #A4A4A4;
+    --preto5: #D5D5D5;
+
+    --amarelo1: #FDB92E;
+    --amarelo2: #FFCC29;
+    --amarelo3: #FFF212;
+    --amarelo4: #FFF472;
+    --amarelo5: #FFFAC2;
+
+    --vermelho: #ED3237;
+    --azul: #0098DA;
+    --branco: #FFFFFF;
+
+    --gap: 3rem;
+  } 
